@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css"></link>
+
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div class="main">
+            <h1>Employee Form</h1>
+          <form action="">
+            <div>
+              <label for="Eid">Employee ID:</label>
+              <input
+                type="text"
+                id="Eid"
+                class="Details"
+                name="Employee-ID"
+                placeholder="Enter Your EMP ID ..."
+                autocomplete="off"
+              />
+            </div>
+            <div>
+              <label for="Ename">Employee Name:</label>
+              <input
+                type="text"
+                id="Ename"
+                class="Details"
+                name="Employee-Name"
+                placeholder="Enter Your Name..."
+                autocomplete="off"
+              />
+            </div>
+            <div>
+              <label for="Email">Employee Email:</label>
+              <input
+                type="email"
+                id="Email"
+                class="Details"
+                name="Employee-mail"
+                placeholder="Enter Your mail..."
+                autocomplete="off"
+              />
+            </div>
+            <div class="optionCont">
+              <label for="location">Select Your Location:</label>
+              <select name="cities" id="location">
+                <option value="CTY">Select Your City</option>
+                <option value="MAS">Chennai</option>
+                <option value="SEC">Hyderabad</option>
+                <option value="KSR">Banglore</option>
+                <option value="MU">Mumbai</option>
+                <option value="PN">Pune</option>
+                <option value="NZB">Delhi</option>
+              </select>
+            </div>
+            <div>
+              <h3>Vaccination Status:</h3>
+              <p>
+                <input type="radio" name="vaccine" id="Dose" />
+                <label for="Dose">Yet to Schedule</label>
+              </p>
+              <p>
+                <input type="radio" name="vaccine" id="Dose2" />
+                <label>Schedule First Dose</label>
+              </p>
+              <p>
+                <input type="radio" name="vaccine" id="Dose3" />
+                <label for="Dose3">Vaccinated First Dose</label>
+              </p>
+              <p>
+                <input type="radio" name="vaccine" id="Dose4" />
+                <label for="Dose4">Scheduled Second Dose</label>
+              </p>
+            </div>
+            <div>
+              <h3>Work Mode:</h3>
+              <p>
+                <input type="checkbox" name="WFH" id="WorkFormHome" />
+                <label for="WorkFormHome">Work From Home</label>
+              </p>
+              <p>
+                <input type="checkbox" name="WFO" id="WorkFormOffice" />
+                <label for="WorkFormHome">Work From Office</label>
+              </p>
+            </div>
+            <div>
+              <label>Back to Office:</label>
+              <input type="date" name="BTOD" min="2024-06-02" max="2024-08-15">
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+          </div>
+    </div>
+</body>
+</html>
