@@ -8,12 +8,616 @@
 </head>
 <body>
 
+    <!-- <script src="app.js" ></script> -->
+
+    <script>
+        // 1
+        // console.log(x);
+        // let x = 20;
+        // console.log(x);
+        // x = 30;
+        // console.log(x);
+
+
+        // 2
+        // console.log(z)
+        // const z = 50;
+        // console.log(z);
+
+
+
+        // 3
+        //     console.log(xyz());
+        //    const xyz =   () => {
+        //         var x = 34;
+        //         console.log(x);
+        //     }
+        //     console.log(x);
+
+
+
+        // 4
+        // function name(){
+           
+        //     const z = 30;
+        //     console.log(z);
+        //     getAge();
+        //     function getAge(){
+        //         let z = 40;
+        //         console.log(z);
+        //     }
+        //     // getAge();
+        // }
+        // name();
+
+
+        // 5
+        // let school = {
+        //     name: 'Vivekananda School',
+        //     location: 'Delhi',
+        //     established: '1971',
+        //     displayInfo: function () {
+        //         console.log(`${school.name} was established 
+        //             in ${school.established} at ${school.location}`);
+        //     }
+        // }
+        // school.displayInfo();   
+
+
+        // 6
+        // const obj1 = {
+        //     name:"pavan",
+        //     age: 28,
+        //     gender: 'male',
+        //     "last name":"Jakkam",
+        //     age:25
+        // }
+
+
+        // console.log(obj1["last name"])
+        // obj1.name="venkatesh"
+        // delete obj1.name
+        // console.log(obj1)
+
+
+
+        // 7
+        // const property = "firstName";
+        // const name = "Jakkam Venkatesh";
+        // const user = {
+        //     [property]:name
+        // }
+        // console.log(user.firstName);
+
+
+        // 8
+            // for (key in obj1) {
+            //     console.log(obj1[key]);
+            // }
+
+
+            // 9
+            // let nums = {
+            //     a:100,
+            //     b:200,
+            //     title:"My num"
+            // };
+
+
+
+            // console.log(multiplyByTwo());
+            // function multiplyByTwo(){
+            //     for (key in nums){
+            //         if (typeof nums[key] === "number") {
+            //             nums[key] = nums[key]*2;
+            //         }
+            //     }
+            // }
+
+            // console.log(nums)
+
+        // 10
+            // const a = {}
+            // const b = { key: "b"}
+            // const c = { key: "c"}
+
+            // a[b] = 123;
+            // a[c] = 456;
+
+            // console.log(a[b])
 
 
 
 
 
-    
-    <script src="app.js" ></script>
+            // 11
+
+            // const user = {
+            //     name:'venkatesh',
+            //     age:28,
+            //     gender:"male"
+            // }
+
+
+            // const strObj = JSON.parse(JSON.stringify(user));
+            // console.log(user.name);
+            // console.log(strObj.name);
+
+            // 12
+            // const person = {
+            //     userName:"pavan",
+            //     level:19,
+            //     health:90
+            // };
+
+            // const data = JSON.stringify(person,['level', "health"])
+            // console.log(data);
+
+
+            // 13
+            // const shape = {
+            //     radius: 10,
+            //     diameter(){
+            //         return this.radius *2;
+            //     },
+            //     perimeter: () => {
+            //         return 2 * this.radius * Math.PI;
+            //     }
+            // }
+
+            // console.log(shape.diameter());
+            // console.log(shape.perimeter());
+
+
+
+            // 14 Object Destructuring
+
+            // const person = {
+            //     userName:"pavan",
+            //     age: 34,
+            //     gender:"male",
+            //     address:{
+            //         street:"Brodepet",
+            //         city:"Guntur"
+
+            //     }
+            // };
+
+            // const { userName:name, address:{street}  } = person;
+
+            // console.log(name)
+            // console.log(street)
+
+
+            // 15
+            // const user = {
+            //     name: "Araya",
+            //     age:24,
+            //     gender:"male"
+            // }
+
+            // // const objClone = Object.assign({},user);
+            // const objClone = JSON.parse(JSON.stringify(user));
+            // // const objClone = { ...user }
+
+            // objClone.name = "geeta";
+
+
+            // console.log(user,objClone)
+
+
+            // this KeyWord 1
+            // this.a = 5;
+            // function getParam(){
+            //     console.log(this.a);
+            // }
+            // getParam();
+
+            // const getData = () => {
+            //     console.log(this.a);
+            // }
+
+            // getData();
+
+
+
+            // 2
+            // let user = {
+            //     name: "venkatesh",
+            //     age: 24,
+            //     getDetails() {
+            //         console.log(this.name);
+            //     },
+
+            // };
+
+            // user.getDetails();
+
+            
+            
+            // 3
+            // let user = {
+            //     name: "venkatesh",
+            //     age: 24,
+            //     getDetails()  {
+            //        const nestedArrow = () =>  console.log(this.name);
+            //        nestedArrow();
+            //     },
+            // };
+
+            // user.getDetails();
+
+
+
+
+            // 4
+            // let user = {
+            //     name:"jakkam",
+            //     age:24,
+            //     gender:"male",
+            //     childObj: {
+            //         newName: "venkatesh",
+            //         getDetails(){
+            //             console.log(this.newName , "and", this.name);
+            //         },
+            //     },
+            // };
+            // user.childObj.getDetails();
+
+
+
+            // 5
+            // class user {
+            //     constructor(n) {
+            //         this.name = n;
+            //     }
+
+            //     getName() {
+            //         console.log(this.name);
+            //     }
+            // };
+
+            // const User = new user ("venkatesh");
+
+            // console.log(User);
+            // User.getName();
+
+
+
+            // 6
+            // function makeUser(){
+            //     return {
+            //         name:"John",
+            //         ref: this,
+            //         ref(){
+            //             return this;
+            //         }
+            //     };
+            // }
+
+            // let user = makeUser();
+            // console.log(user.ref().name);
+
+
+            // 7
+            // const user = {
+            //     name:"Jakkam Venkatesh",
+            //     logMessage() {
+            //         console.log(this.name);
+            //     },
+            // };
+            // setTimeout(user.logMessage(), 1000);
+
+
+            // 8
+            // const user = {
+            //     name:"venkatesh",
+            //     greet(){
+            //         return `Hellow, ${this.name}`;
+            //     },
+
+            //     farewell: () => {
+            //         return `GoodBye , ${this.name}`;
+            //     },
+
+            // };
+
+
+            // console.log(user.greet());
+            // console.log(user.farewell());
+
+
+            // 9
+            // let calculator = {
+            //     read() {
+            //         this.a = +prompt("a = " , 0);
+            //         this.b = +prompt("b = " , 0);
+            //     },
+            //     sum(){
+            //         return this.a + this.b;
+            //     },
+            //     mul() {
+            //         return this.a * this.b;
+            //     }
+            // }
+
+
+            // calculator.read();
+            // console.log(calculator.sum());
+            // console.log(calculator.mul());
+
+
+
+            // 10
+
+            // const calc = {
+            //     total: 0,
+            //     add(a){
+            //         this.total += a;
+            //         return this;
+
+            //     },
+            //     multiply(a){
+            //         this.total *= a;
+            //         return this;
+
+            //     },
+            //     substract(a){
+            //         this.total -= a;
+            //         return this;
+
+            //     }
+            // };
+
+            // const result = calc.add(10).multiply(5).substract(30).add(10)
+            // console.log(result.total);
+
+
+
+            // CALL ,APPLY, BIND -------------  2JS
+            // 1
+            // const obj = {
+            //     name: "Venkatesh"
+            // }
+
+            // function sayHello(age,gender) {
+            //     return "Hello  " + this.name + " is " + age + "  " + gender;
+            // }
+
+            // console.log(sayHello.call(obj,24,"male"));
+
+
+            // 2
+            // const obj = {
+            //     name: "Venkatesh"
+            // }
+
+            // function sayHello(age,gender) {
+            //     return "Hello  " + this.name + " is " + age + "  " + gender;
+            // }
+
+            // console.log(sayHello.apply(obj,[24,"male"]));
+
+
+            // 3
+            // const obj = {
+            //     name: "Venkatesh"
+            // };
+
+            // function sayHello(age,gender,profession) {
+            //         return "Hello  " + this.name + " is " + age + "  " + gender + "  " +profession;
+            // }
+
+            // const bindFunc = sayHello.bind(obj);
+            
+
+            // console.log(bindFunc(24,"male"));
+            // console.log(bindFunc(24,"software engineer"));
+
+
+            // 4
+            // const person = {
+            //     name: "jakkam"
+            // }
+
+            // function sayHi(age){
+            //     return `${this.name} is ${age}`;
+            // }
+
+            // console.log(sayHi.call(person, 24));
+            // console.log(sayHi.bind(person,24));
+
+
+
+            // 5
+
+            // const age = 10;
+
+            // var person = {
+            //     name:"Jakkam",
+            //     age: 20,
+            //     getAge: function () {
+            //         return this.age;
+            //     },
+            // };
+
+            // var person2 = { age: 24 };
+            // console.log(person.getAge.bind(person2)());
+
+
+            // 6
+            // var status = "Hello!!....";
+
+            // setTimeout(() => {
+            //     const status = "Hello!!....";
+
+            //     const data = {
+            //         status:"Welcome",
+            //         getStatus() {
+            //             return this.status;
+            //         },
+            //     };
+
+
+            //     console.log(data.getStatus());
+            //     console.log(data.getStatus.call(this));
+            // },0)
+
+
+
+            // 7
+            // const animals = [
+            //     { species: 'Lion', name:"King" },
+            //     { species: "whale", name: 'Queen'}
+            // ];
+
+            // function printAnimals(i){
+            //     this.print = function () {
+            //         console.log("#" + i + " " + this.species + ": " + this.name);
+            //     };
+            //     this.print();
+            // }
+            
+            // for(let i = 0; i < animals.length; i++) {
+            //     printAnimals.call(animals[i], i);
+            // }
+
+
+
+
+            // Append an array to another array
+
+            // const array = ["a", "b"];
+            // const elements = [0, 1, 2];
+            // console.log(array.push(5));
+            // console.log(array.push(elements));
+            // console.log(array.push.apply(array,elements));
+            // console.log(array);
+
+
+
+
+            // 3 Find MIN and MAX  Number in an array;
+
+            // const numbers = [ 5, 6, 2, 3 ,7 ];
+
+            // console.log(Math.min.apply(null, numbers));
+
+            // Loop based algorithm
+            // max = -Infinity, min = +Infinity;
+
+            // for(let i = 0; i < numbers.lenght; i++) {
+            //     if (numbers[i] > max) {
+            //         max = numbers[i];
+            //     }
+            //     if (numbers[i] < min){
+            //         min = numbers[i];
+            //     }
+            // }
+
+
+
+            // 5
+            // function f() {
+            //     console.log(this);
+            // }
+
+            // let user = {
+            //     g: f.bind(null),
+            // }
+
+            // user.g();
+
+
+            // 6 Bind Chain
+            // function f() {
+            //     console.log(this.name)
+            // }
+
+            // f = f.bind({ name:"john"}).bind({ name:"Ann" });
+
+            // f();
+
+
+
+            // 7 FIX
+            // function checkPassword(success, failed){
+            //     let password = prompt("Password",  " ");
+            //     if (password == "Roadside Coder") success();
+            //     else failed();
+            // }
+
+
+            // let user = {
+            //     name: "Jakkam Venkatesh",
+
+            //     loginSuccessful() {
+            //         console.log(`${this.name} logged In`);
+            //     },
+            //     loginFailed(){
+            //         console.log(`${this.name} failed to log In`);
+            //     }
+            // }
+
+            // checkPassword(user.loginSuccessful.bind(user),user.loginFailed.bind(user))
+
+
+
+            // 8
+            // function checkPassword(ok, fail){
+            //     let password = prompt("password", "");
+            //     if(password == "RoadSideCoder") ok();
+            //     else fail();
+            // }
+
+            // let user = {
+            //     name: "Jakkam Venkatesh",
+            //     login(result){
+            //         console.log(this.name + (result ? " login successful " : " login Failed"));
+            //     },
+
+            // };
+
+            // checkPassword(user.login.bind(user,true), user.login.bind(user,false));
+
+
+
+
+            // 9
+            // const age = 10;
+
+            // var person = {
+            //     name:"venkatesh",
+            //     age: 20,
+            //     getAgeArrow: () => {
+            //         console.log(this.age)
+            //     },
+            //     getAge(){
+            //         console.log(this.age);
+            //     }
+            // }
+
+            // var person2 = { age: 24 }
+            // person.getAge.call(person2);
+            // person.getAgeArrow.call(person2);
+
+
+            // 10
+            // let car1 = {
+            //     color: "Red",
+            //     company: "Ferrari"
+            // };
+
+            // function purchaseCar(currency,price){
+            //     console.log(`I have purchased ${this.color} - ${this.company} car for ${currency} ${price}`);
+            // }
+
+            // purchaseCar.call(car1, "$" , 500000);
+
+
+            // 11
+            
+    </script>
+
 </body>
 </html>
