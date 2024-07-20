@@ -191,34 +191,57 @@ console.log("start");
     // result();
 
 
-
-
-
-
     // ****************************************Promise.Finally*********************************//
 
 
-    const promise = new Promise((resolve,reject) => {
-        setTimeout(() => {
-            let result = true;
-            if (result) {
-                resolve({userName:'venkatesh', gender:"male"});
-            } else {
-                reject("ERROR: Promise Rejected Successfully");
-            }
-        },1000);
-    });
+    // const promise = new Promise((resolve,reject) => {
+    //     setTimeout(() => {
+    //         let result = true;
+    //         if (result) {
+    //             resolve({userName:'venkatesh', gender:"male"});
+    //         } else {
+    //             reject("ERROR: Promise Rejected Successfully");
+    //         }
+    //     },1000);
+    // });
 
 
-    promise
-    .then((res) => {
-        console.log(res);
-        return res.userName;
-    })
-    .then((res)=>{
-        console.log(res)
-    })
-    .catch((err)=> console.log(err))
-    .finally(() => console.log("The Promise has been Resolved or Rejected Succcessfully"))
+    // promise
+    // .then((res) => {
+    //     console.log(res);
+    //     return res.userName;
+    // })
+    // .then((res)=>{
+    //     console.log(res)
+    // })
+    // .catch((err)=> console.log(err))
+    // .finally(() => console.log("The Promise has been Resolved or Rejected Succcessfully"));
+
+
+// ***********************************   NEW KEY Word  ***********************************//
+    // function Manufacture(make,model,year){
+    //     this.make = make;
+    //     this.model = model;
+    //     this.year = year;
+    //     console.log(make,model,year);
+    // }
+
+    // const bike = new Manufacture("Hero","splender",2091);
+    // const car = new Manufacture("KIA", "SONET", 2018);
+    // console.log(bike,car);
+
+    // console.log(make,model,year);
+
+
+    const animal = "human"
+
+    let obj1 = {
+        
+        name:"venkatesh",
+        gender:"male",
+        getDetails: function () {
+            console.log(this.animal)
+        }
+    }
 
 console.log("stop");

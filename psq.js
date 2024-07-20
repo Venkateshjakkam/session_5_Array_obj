@@ -13,11 +13,12 @@
 
 
 // ********************************** 3 *****************************//
-// const number = [1,2,3,4,5,6,7,8]
+
+// 1
+
+// const number = [1, 2, 3, 4, 5, 6, 7, 8];
 // const outPut = Math.max(...number);
 // console.log(outPut);
-
-
 
 
 // // ****************using For Loop********************//
@@ -32,31 +33,28 @@
 
 // console.log(max); 
 
-// ******************************* 4 *********************************//
-// let arr = ["apple", "mango", "apple", "orange", "mango", "mango"];
+// ******************************* 4 *********************************/
 
-// function removeDuplicates(arr) {
-//     let unique = [];  
-//     for (let i = 0; i < arr.length; i++) { 
-//         if (unique.indexOf(arr[i]) === -1) { 
-//             unique.push(arr[i]);  
-//         }
+// const removeDuplicateEle = (inputArr) => {
+//     let uniqueArr = [];
+//     for(let i=0; i<inputArr.length; i++) {
+//         if(!uniqueArr.includes(inputArr[i]))
+//             uniqueArr.push(inputArr[i])
 //     }
-//     return unique;  
+//     return uniqueArr;
 // }
-
-// console.log(removeDuplicates(arr));  
+// console.log(removeDuplicateEle([1,2,3,5,3,1,9]));  
 
 
 //**************************************** 5 *****************************//
 
 
 // let a = ["venki@gmail.com","pavan@gmail.com","kumar@gmail.com"];
-
+// Method--1
 // for(let i = 0; i < a.length; i++) {
 //     console.log(a[i].slice(0, a[i].indexOf('@')));
 // }
-
+// Method-2
 // const data = a.map((item) => {
 //     return item.split('@')[0];
 // });
